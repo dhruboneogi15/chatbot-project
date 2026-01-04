@@ -31,7 +31,7 @@ export function ChatMessage({ message, sender }) {
         {message}
       </div>
       {sender === 'user' && (
-        <img src={UserProfileImage} className="chat-message-profile" />
+        <img src={UserProfileImage} className="chat-message-profile-user" />
       )}
     </div>
   );
