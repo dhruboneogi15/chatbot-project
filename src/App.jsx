@@ -1,9 +1,19 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { ChatInput } from './components/ChatInput';
 import ChatMessages from './components/ChatMessages';
 import './App.css'
+import { Chatbot } from 'supersimpledev';
 
 function App() {
+  const obj= {PI:'3.14157',
+    'Best Coder': 'tourist'
+  };
+  useEffect(() => {
+    
+    Chatbot.addResponses(
+      obj)
+    // console.log("printing "+obj['PI']);
+  },[]);
   const [chatMessages, setChatMessages] = useState([{
     message: 'hello chatbot',
     sender: 'user',
