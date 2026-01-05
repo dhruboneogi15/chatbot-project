@@ -13,7 +13,7 @@ function App() {
     Chatbot.addResponses(
       obj)
     // console.log("printing "+obj['PI']);
-  },[]);
+  });
   const [chatMessages, setChatMessages] = useState([{
     message: 'hello chatbot',
     sender: 'user',
